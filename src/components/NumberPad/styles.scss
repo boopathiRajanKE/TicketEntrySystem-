@@ -1,0 +1,104 @@
+.tg-number-pad-wrapper {
+  max-width: 360px;
+  background-color: white;
+  border-radius: 7px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .tg-input-block {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-end;
+  }
+
+  .tg-input-element {
+    margin-right: 10px;
+  }
+
+  .tg-input-text {
+    font-family: "Nexa-Regular";
+    color: #e85b30;
+    border: 1px solid #e85b30;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: #fcf2e8;
+    padding: 3px 8px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+    li {
+      cursor: pointer;
+      font-family: "Nexa-Bold";
+      font-size: 17px;
+      color: #667072;
+      width: 120px;
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0.5px solid #e9e9e9;
+      box-sizing: border-box;
+      &:hover {
+        background-color: #f8f8f8;
+      }
+    }
+
+    .tg-key-number:nth-child(3n + 3),
+    .tg-key-number:nth-child(3n + 2) {
+      border-right: 0px;
+      border-bottom: 0px;
+    }
+    .tg-key-number:nth-child(3n + 1) {
+      border-bottom: 0px;
+    }
+    .tg-key-number svg {
+      fill: #e85757;
+    }
+    .tg-key-number[value="back"] svg {
+      fill: #667072;
+    }
+  }
+
+  .tg-input-element {
+    font-family: nexa-bold;
+    font-size: 18px;
+    letter-spacing: 8px;
+    border: none;
+    color: #666666;
+    line-height: 28px;
+  }
+  .tg-add-ticket {
+    font-family: nexa-regular;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 16px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #535555;
+    background: #f8f9fa;
+    cursor: pointer;
+    border-radius: 11px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+    &.hide {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+}

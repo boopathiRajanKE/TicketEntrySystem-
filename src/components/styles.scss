@@ -1,0 +1,18 @@
+.tg-main-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #356bb4;
+  overflow: hidden;
+  .tg-primary-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #366bb4;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.34);
+  }
+}

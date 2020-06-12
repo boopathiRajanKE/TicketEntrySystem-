@@ -1,0 +1,54 @@
+.tg-wheel-wrapper {
+  text-align: center;
+  margin-right: 20px;
+  .tg-wheel-text {
+    color: white;
+    font-family: "nexa-regular";
+    font-size: 17px;
+  }
+  .tg-wheel-warn {
+    color: #ee9a3b;
+    background: #fdf7e6;
+    border: 1px solid #f8dfab;
+    border-radius: 4px;
+    font-family: "nexa-regular";
+    font-size: 14px;
+    text-align: center;
+    padding: 2px;
+    display: inline-block;
+  }
+  .tg-wheel-image-wrapper {
+    margin: 25px 0;
+    cursor: pointer;
+    overflow: hidden;
+
+    &.hide {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+  .tg-wheel-image {
+    width: 100%;
+    max-width: 290px;
+  }
+}
+
+.rotate {
+  animation: spin 1s linear;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
